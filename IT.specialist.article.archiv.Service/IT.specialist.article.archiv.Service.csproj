@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IT-specialist-article-archiv\IT-specialist-article-archiv.csproj" />
+    <ProjectReference Include="..\IT.specialist.article.archiv.Data.DB\IT.specialist.article.archiv.Data.DB.csproj" />
+  </ItemGroup>
+
+</Project>

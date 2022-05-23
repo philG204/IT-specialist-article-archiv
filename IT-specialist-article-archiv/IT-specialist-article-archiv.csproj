@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>IT_specialist_article_archiv</RootNamespace>
+  </PropertyGroup>
+
+</Project>
