@@ -10,12 +10,42 @@ namespace IT.specialist.article.archiv.Data.DB
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                OleDbConnection connection = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = ArchivDB.accdb");
+                connection.Open();
+
+                OleDbCommand cmd = new OleDbCommand("DELETE FROM Archiv WHERE Archiv_id = ?", connection);
+                cmd.Parameters.Add(new OleDbParameter { Value = id });
+
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                return false;
+            }
         }
 
         public bool Delte(Archiv obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+                OleDbConnection connection = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = ArchivDB.accdb");
+                connection.Open();
+
+                OleDbCommand cmd = new OleDbCommand("DELETE FROM Archiv WHERE Archiv_id = ?", connection);
+                cmd.Parameters.Add(new OleDbParameter { Value = obj.Id });
+     
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                return false;
+            }
         }
 
         public Archiv Get(int id)
